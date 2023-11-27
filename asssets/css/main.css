@@ -1,0 +1,96 @@
+html{
+    font-family: 'Nunito', sans-serif;
+}
+
+td {
+    border:solid 1px; 
+}
+a{
+    text-decoration: none; /* asi quitamos */
+    color: #336ef7;
+}
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.paragraph {
+    line-height: 1.8em;
+    font-weight: 200;
+}
+
+
+.container {
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh; /*REPRESENTA VH TODA LA PANTALLA*/
+    width: 100vw;  /*Vw ES PARA EL WIDTH*/
+
+    /*PARA CENTRAR SOLO UTILIZAMOS ESTO */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content {
+    max-width: 950px;
+    max-height: 333px;
+    width: 100%;
+    height: 100%; /*estirate todo el ancho y alto que puedas sin romer los limites que puse*/
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 9px #000;
+    border-radius: 5px;
+}
+
+/*ESTILIZANDO LA TABLA*/
+.table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+td{
+    border-style: none;
+    
+}
+
+.table td:nth-child(4) {  /*usamos td:nth-child(valor) para aplicar estilos a UN elemento en especifico*/
+    width: 1px;
+}
+
+.keep-border {
+    /*en vez de ponerle un border 0px a cada uno menos al derecho pones lo de abajo y es mas rapido*/
+    border-right-style: solid;
+}
+
+        /*-----------CON UNA COMA SE PUEDE SELECCIONAR MAS DE UN SELECTOR td celda th encabezado---------*/
+.table td, .table th {  
+    padding: 1em;
+    text-align: center;
+
+}
+.fa-star{
+    color: #ffc400;
+}
+.par {
+    background-color: #fcb28baf;
+}
+
+
+/*-----------ESTILIZANDO LOCAL STORE  localstore.html----------*/
+.title-item {
+    /* border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #ffc400; */
+    padding-bottom:1em;
+
+    border-bottom: solid 2px #ffc400;  /*con una clase  Shorthand Properties el estilo, borde, y el color en una sola linea*/
+}
+
+.position {
+    background-color: #ffc400;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
